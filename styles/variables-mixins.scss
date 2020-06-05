@@ -1,0 +1,56 @@
+/* Sass Variables and Mixins */
+
+
+/*VARIABLES*/
+/* Colours */
+$slateBlue: #454857;
+$slateGreen: #64AD7D;
+$slateBlack: #333333;
+$slateSecBlue: #555966;
+$slateTeal: #669E9B;
+$slateDarkGreen: #71AE87;
+$maroon: #8F002E;
+$addgreen: #2BB673;
+$buttongrey: #F9F9F9;
+$backgroundgrey: #E6E7E8;
+$bordergrey: #D0D0D0;
+$footertopgrey: #F2F2F2;
+$footerbottomgrey: #E6E6E6;
+$hovergrey: #F7F7F7;
+$greyvalidator: #808285;
+$textgreyblue: #72818B;
+$slateWhite: #FFFFFF;
+$errorred: #FF0000;
+$blueattention: #4285f4;
+$remove: #ED1C24;
+
+
+/* Box Shadow */
+$boxShadow: 1px 1px 1px 0.75px #cecece;
+
+
+/* Questionable colours */
+/*Found on existing site My Account page (secondary buttons)*/
+$inactiveButtonGrey: #D1D3D4;
+$inactiveButtonGreyHover: #C4C4C4;
+$activeButtonGreenHover: #5A9669; /* Found on the curent style guide and questionnaire buttons */
+
+$borderOnSearch: #999999; /* border on Search Bar large */
+
+$boxShadowColor: #cecece;
+
+$LDTopMenu: #393c47;
+$helpLabel: #88abac;
+
+$footerDisclaimerLink: #3c9685;
+
+
+
+
+/*MIXINS*/
+@mixin boxShadow($property) {
+  -webkit-box-shadow: $property;
+  -moz-box-shadow: $property;
+  box-shadow: $property;
+}
+

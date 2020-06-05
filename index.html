@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet"> 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styles/ld.css">
+
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/doc-style.css">
+
+
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9bb6abc112.js" crossorigin="anonymous"></script>
+
+    <title>Basic UI</title>
+
+
+  </head>
+  <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0 mainNav">
+
+            <a class="navbar-brand py-0" href="#">
+                <img class="brandLogo" src="images/logo-mobile.svg">
+            </a>
+
+
+            <div id="navbarNavDropdown" class="ml-auto">
+
+                <div class="navbar-nav ml-auto d-flex flex-row">
+                    
+                    <div class="nav-item px-5 py-4 my-0 d-none d-lg-inline-flex collapse navbar-collapse">
+                        <a href="#" class="nav-link">1-855-231-8424</a>
+                    </div>    
+                
+                    <div class="nav-item border-left dropdown px-5 py-4 my-0">
+                        <!-- <a href="#" class="nav-link text-uppercase">Help</a> -->
+                        <a class="nav-link dropdown-toggle pl-0" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Help
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item border-left px-5 py-4 my-0 d-inline-block d-lg-none">
+                        <a href="#" class="nav-link" onclick="showSearch()">
+                            <img id="magGlass" src="images/search.svg" style="width: 25px; height: 26px;">
+                        </a>
+
+                        <div id="searchMainMenu" class="d-none" style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.7); z-index: 999; align-items: center; justify-content: center;">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0 search_submit" type="submit" onclick="showSearch()">Go</button>
+                            </form>                            
+                        </div>
+
+                    </div>
+
+                    <div class="collapse navbar-collapse">
+                        <div class="nav-item border-left px-5 py-4 my-0">
+
+                            <a href="#" class="nav-link">Create Free Account</a>
+                            
+                        </div>
+
+                        <div class="nav-item border-left px-5 py-4 my-0">
+
+                            <a href="#" class="nav-link">Sign In</a>
+                            
+                        </div>
+                        
+                    </div>
+
+
+
+                    
+                </div>
+
+    <!--             <form class="form-inline my-2 my-lg-0 px-5">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+
+            </div>
+
+            <div class="nav-item border-left px-5 py-4 my-0 d-inline-block d-lg-none">
+
+                <button class="navbar-toggler border-left" type="button" data-toggle="collapse" data-target=".myNavDropdown" aria-controls="myNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>                
+            </div>
+
+
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark LDTopMenu py-0 py-lg-2">
+
+            <div class="collapse navbar-collapse myNavDropdown" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Estate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Real Estate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Financial</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Family</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">All</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline d-none d-lg-flex my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12 subHead">
+
+                <p class="resi">FREE RESIDENTIAL RENTAL / LEASE AGREEMENT</p>
+                
+            </div>
+
+            <div class="col-12">
+                <p class="question">What type of property is being rented?</p>
+            </div>
+            <div class="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/house.png">
+                
+                    <label class="iconLabel">
+                        House
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 col-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/apartment.png">
+                
+                    <label class="iconLabel">
+                        Apartment
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/basement.png">
+                
+                    <label class="iconLabel">
+                        Basement
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 col-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/condo.png">
+                
+                    <label class="iconLabel">
+                        Condo
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/duplex.png">
+                
+                    <label class="iconLabel">
+                        Duplex
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 col-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/mobile.png">
+                
+                    <label class="iconLabel">
+                        Mobile
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/room.png">
+                
+                    <label class="iconLabel">
+                        Room
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 col-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/townHouse.png">
+                
+                    <label class="iconLabel">
+                        Town House
+                    </label>
+                </span>
+                </div>    
+            </div>
+            <div class="col-6 col-md-5 offset-md-1 col-lg-3 offset-lg-3">
+                <div class=" iconContain">
+                <span class="iconSpan">
+
+                    <img class="iconImg" src="images/content/other.png">
+                
+                    <label class="iconLabel">
+                        Other
+                    </label>
+                </span>
+                </div>    
+            </div>
+
+            <div>
+                <p>Lorem ipsum dolor <a href="#">sit amet, consectetur</a> adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+     
+    </div>
+
+
+
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+                    <div class="col-12 d-block d-md-none">
+
+                        <a href="#"><h5 class="text-center">Help</h5></a>
+
+                    </div>
+
+                    <div class="col-4 text-center  d-block d-md-none">
+
+                        <a href="">About Us</a>
+
+                    </div>
+                    <div class="col-4 text-center  d-block d-md-none">
+
+                        <a href="">Privacy Policy</a>
+
+                    </div>
+                        <div class="col-4 text-center  d-block d-md-none">
+
+                        <a href="">Disclaimer</a>
+
+                    </div>
+
+                <div class="col-12">
+
+                    <div class="footerSlate_container">
+                        <div class="footerSlate_simple">
+                            <div class="footerSlate_left d-none d-md-block">
+                                <div class="footerv2_phone">
+                                    1-855-231-8424<br><span class="footerv2_phone_hours">Mon-Fri 8am - 7pm ET</span>
+                                </div>
+                            </div>
+                            
+                            <div class="footerv2_logos">
+                                <div class="footerv2_logo_symantec">
+                                    
+                                    <img class="img-fluid" name="seal" src="https://seal.websecurity.norton.com/getseal?at=0&amp;sealid=0&amp;dn=www.lawdepot.ca&amp;lang=en&amp;tpt=transparent" usemap="#sealmap_large" alt="" border="0"> 
+
+                                </div>
+                                <div class="footerv2_logo_trustwave">
+                                    
+                                    <img class="img-fluid"  id="trustwaveSealImage" src="https://sealserver.trustwave.com/seal_image.php?customerId=x4ix8frNfNOhLcVHKItmgytngYYVM8&amp;size=105x54&amp;style=" style="cursor:pointer;" alt="This site is protected by Trustwave's Trusted Commerce program" title="This site is protected by Trustwave's Trusted Commerce program" border="0">
+                                </div>
+
+                                <div class="footerv2_logo_bbb">
+
+                                    <img class="logo_bb img-fluid" src="https://seal-edmonton.bbb.org/seals/blue-seal-293-61-lawdepottm-134065.png" alt="Click for the Business Review of LawDepot TM, a Legal Forms in Edmonton AB">
+
+                                </div>
+                            </div>
+                    
+
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+
+            
+        </div>
+
+        <div class="w-100 bottomFootContain">
+            <div class="container">
+
+                <div class="row">
+
+
+
+                    <div class="col-12">
+
+                        <div class="footerv2_disclaimer">
+                            <p>Your use of this site is subject to our <a href="https://www.lawdepot.ca/terms.php">Terms of Use</a>, <a href="https://www.lawdepot.ca/disclaimer.php">Disclaimer</a>, and <a href="https://www.lawdepot.ca/privacy.php">Privacy Policy</a>. LawDepot&reg; is not a law firm and cannot provide legal advice. We provide information and software and you are responsible for appropriately using this material. &copy;2002-2019 LawDepot&reg; (Sequiter Inc.). All Rights Reserved.</p>
+                        </div>
+                                    
+                    </div>
+                    
+                </div>
+                
+            </div>            
+        </div>
+
+
+
+
+
+
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+    <script src="js/scripts.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,8 @@
+/* Change dropdowns from click to hover */
+.dropdown:hover>.dropdown-menu {
+
+    display: block;
+    top: calc(100% - 2px);
+
+}
+

@@ -1,0 +1,124 @@
+.subHead {
+
+	background-color: #454857;
+	padding: 31px 0 31px 18px;
+}
+
+.resi {
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.contractHead .headerSlate {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.que {
+    font-size: 32px;
+    color:#333; 
+    
+}
+
+.question {
+	font-size: 20px;
+	padding: 40px 0 0 18px;
+}
+
+
+.iconContain {
+
+	display: flex !important;
+	position: relative;
+
+	/*float: left;*/
+	/*margin: 0 50px 50px 0;*/
+	
+	margin: 5px 0;
+	background-color: #f9f9f9;
+	box-shadow: 0 1px 3px 1px rgba(211,211,211,.7);
+	cursor: pointer;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-align-content: center;
+	align-content: center;
+
+}
+
+.iconSpan {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 150px;
+	height: 150px;
+}
+
+.iconImg {
+	width: 85px;
+	position: relative;
+	bottom: 20px;
+}
+
+.iconLabel {
+
+	width: 100%;
+	max-width: 150px;
+	min-width: 50px;
+	position: relative;
+	line-height: 1em;
+	text-align: center;
+	color: #333;
+	top: -10px;
+	box-shadow: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+
+}
+
+#saveEmail {
+	position: fixed; 
+	
+	left: 10px; 
+	z-index: 99; 
+	width: 350px;
+}
+
+.bottomPosClosed {
+	bottom: -136px;
+}
+
+@keyframes emailer {
+	0% { bottom: -136px }
+	100% { bottom: 0px }
+}
+@keyframes emailerRev {
+	0% { bottom: 0px }
+	100% { bottom: -136px }
+}
+.bottomPosOpen {
+	animation: emailer 1s forwards;
+}
+
+.bottomPosOpenReverse {
+	animation: emailerRev 1s forwards;
+	animation-direction: reverse;
+}
+
+.topMenu {
+	width: 100%;
+	height: 65px;
+	position: relative;
+	background-color: #393c47;
+	z-index: 10;
+}
